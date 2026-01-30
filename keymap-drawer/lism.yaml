@@ -1,27 +1,27 @@
 layout: {zmk_keyboard: lism}
 layers:
   Default Layer:
-  - Q
+  - {t: Q, h: Device Layer}
   - W
   - E
   - R
   - T
   - Y
   - U
-  - I
-  - O
+  - {t: I, h: Mouse Layer}
+  - {t: O, h: Number Layer}
   - P
-  - A
-  - {t: S, h: LALT}
-  - {t: D, h: LSHIFT}
-  - {t: F, h: LGUI}
-  - {t: G, h: LCTRL}
-  - {t: H, h: RCTRL}
-  - {t: J, h: RGUI}
-  - {t: K, h: RSHIFT}
-  - {t: L, h: RALT}
-  - {t: ;, h: Mark Layer}
-  - Z
+  - {t: A, h: LEFT SHIFT}
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - /
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
@@ -30,19 +30,19 @@ layers:
   - M
   - ','
   - .
-  - /
-  - {t: DEL, h: Device Layer}
-  - {t: Mouse Layer, h: toggle}
-  - {t: TAB, h: Mouse Layer}
+  - '-'
+  - {t: TAB, h: LEFT CONTROL}
+  - LEFT WIN
+  - LEFT ALT
   - Sft+Gui+4
+  - '&mkp MB1'
   - {t: SPACE, h: Number Layer}
-  - {t: ESC, h: Mark Layer}
   - {t: BS, h: Mark Layer}
   - {t: ENTER, h: Number Layer}
   - Sft+Gui+4
-  - F7
-  - F10
-  - {t: F12, h: Device Layer}
+  - POUND
+  - ESCAPE
+  - {t: DEL, h: CONTEXT MENU}
   Mouse Layer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -51,9 +51,9 @@ layers:
   - {t: ▽, type: trans}
   - SPACE
   - Gui+←
-  - Gui+→
+  - {t: Gui+→, type: held}
   - '&mkp MB3'
-  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,7 +62,7 @@ layers:
   - Gui+↑
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&msc SCRL_UP'
+  - '&mkp MB2'
   - '&msc SCRL_DOWN'
   - '&mkp MB4'
   - {t: ▽, type: trans}
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -92,36 +92,36 @@ layers:
   - '8'
   - '9'
   - '='
-  - F1
-  - F2
-  - F7
-  - F10
-  - RSHIFT
+  - '-'
+  - '7'
+  - '8'
+  - {t: '9', type: held}
+  - +
   - '*'
   - {t: '4', h: LALT}
   - {t: '5', h: LSHIFT}
   - {t: '6', h: LGUI}
   - {t: '-', h: LCTRL}
-  - '&mkp MB1'
-  - ←
-  - ↑
-  - →
-  - RGUI
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '*'
   - /
   - '1'
   - '2'
   - '3'
   - +
-  - '&mkp MB2'
-  - ''
-  - ↓
-  - ''
-  - RALT
+  - KP EQUAL
+  - '1'
+  - '2'
+  - '3'
+  - '0'
   - {t: ▽, type: trans}
   - .
   - '0'
   - {t: ▽, type: trans}
-  - {t: LANG2, type: held}
+  - LANG2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANG1
@@ -149,7 +149,7 @@ layers:
   - _
   - ''''
   - '"'
-  - {t: \, type: held}
+  - \
   - KP NUMLOCK
   - F11
   - '{'
@@ -166,14 +166,14 @@ layers:
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ENTER
   - {t: ▽, type: trans}
   - ''
   - ''
   - F12
   Device Layer:
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -203,7 +203,7 @@ layers:
   - ''
   - ''
   - Reset
-  - {t: Boot, type: held}
+  - Boot
   - BT CLR ALL
   - ''
   - ''
