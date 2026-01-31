@@ -9,7 +9,7 @@ layers:
   - Y
   - U
   - {t: I, h: Mouse Layer}
-  - {t: O, h: Number Layer}
+  - {t: O, h: Mark Layer}
   - P
   - {t: A, h: LEFT SHIFT}
   - S
@@ -37,29 +37,29 @@ layers:
   - Sft+Gui+4
   - '&mkp MB1'
   - {t: SPACE, h: Number Layer}
-  - {t: BS, h: Mark Layer}
-  - {t: ENTER, h: Number Layer}
+  - {t: BS, h: Device Layer}
+  - {t: ENTER, h: CONTEXT MENU}
   - Sft+Gui+4
   - POUND
   - ESCAPE
   - {t: DEL, h: CONTEXT MENU}
   Mouse Layer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Gui+UP ARROW
   - Gui+←
   - {t: Gui+→, type: held}
   - '&mkp MB3'
   - '&msc SCRL_UP'
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+↑
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - Gui+↓
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB2'
@@ -69,7 +69,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+↓
+  - Ctl+T
   - ←
   - ↑
   - →
@@ -81,67 +81,67 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+W
   - {t: ▽, type: trans}
   - ↓
   - {t: ▽, type: trans}
-  - Gui+W
-  Number Layer:
   - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - '='
+  Number Layer:
+  - Ctl+Alt+DEL
+  - Gui+←
+  - ↑
+  - Gui+→
+  - ''''
   - '-'
   - '7'
   - '8'
-  - {t: '9', type: held}
+  - '9'
   - +
-  - '*'
-  - {t: '4', h: LALT}
-  - {t: '5', h: LSHIFT}
-  - {t: '6', h: LGUI}
-  - {t: '-', h: LCTRL}
+  - Ctl+TAB
+  - ←
+  - DOWN ARROW
+  - →
+  - ':'
   - /
   - '4'
   - '5'
   - '6'
   - '*'
-  - /
-  - '1'
-  - '2'
-  - '3'
-  - +
+  - Sft+Ctl+TAB
+  - Sft+UP ARROW
+  - Alt+↓
+  - UNDERSCORE
+  - ;
   - KP EQUAL
   - '1'
   - '2'
   - '3'
-  - '0'
-  - {t: ▽, type: trans}
-  - .
-  - '0'
+  - (
+  - Sft+←
+  - Sft+↓
+  - Sft+→
   - {t: ▽, type: trans}
   - LANG2
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LANG1
   - {t: ▽, type: trans}
-  - Sft+Ctl+TAB
-  - Ctl+TAB
-  - F12
+  - '0'
+  - PERIOD
+  - )
   Mark Layer:
   - Sft+Gui+4
-  - F4
+  - {t: ▽, type: trans}
   - (
   - )
   - ''
   - '~'
   - '!'
   - '@'
-  - '#'
+  - {t: '#', type: held}
   - $
   - '&emoji'
-  - F5
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - ''
@@ -151,7 +151,7 @@ layers:
   - '"'
   - \
   - KP NUMLOCK
-  - F11
+  - {t: ▽, type: trans}
   - '{'
   - '}'
   - ''
@@ -162,11 +162,11 @@ layers:
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
   - ''
