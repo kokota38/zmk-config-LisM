@@ -51,10 +51,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&lt 4 Q               &kp W         &kp E         &kp R           &kp T                                     &kp Y        &kp U           &lt 1 I    &lt 2 O     &kp P
-&mt LEFT_SHIFT A      &kp S         &kp D         &kp F           &kp G                                     &kp H        &kp J           &kp K      &kp L       &kp SLASH
-&mt LEFT_SHIFT Z      &kp X         &kp C         &kp V           &kp B                                     &kp N        &kp M           &kp COMMA  &kp DOT     &kp MINUS
-&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &mkp MB1  &lt 2 SPACE    &lt 3 BACKSPACE  &lt 2 ENTER  &kp LS(LG(N4))  &kp POUND  &kp ESCAPE  &mt K_CONTEXT_MENU DEL
+&lt 4 Q               &kp W         &kp E         &kp R           &kp T                                     &kp Y                     &kp U           &lt 1 I    &lt 3 O     &kp P
+&mt LEFT_SHIFT A      &kp S         &kp D         &kp F           &kp G                                     &kp H                     &kp J           &kp K      &kp L       &kp SLASH
+&mt LEFT_SHIFT Z      &kp X         &kp C         &kp V           &kp B                                     &kp N                     &kp M           &kp COMMA  &kp DOT     &kp MINUS
+&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &mkp MB1  &lt 2 SPACE    &lt 4 BACKSPACE  &mt K_CONTEXT_MENU ENTER  &kp LS(LG(N4))  &kp POUND  &kp ESCAPE  &mt K_CONTEXT_MENU DEL
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
@@ -63,20 +63,20 @@
         layer_1 {
             display-name = "Mouse Layer";
             bindings = <
-&trans    &trans  &trans  &trans  &trans                    &kp SPACE     &kp RG(LEFT)  &kp RG(RIGHT)  &mkp MB3   &msc SCRL_UP
-&mkp MB5  &trans  &trans  &trans  &trans                    &kp LG(UP)    &mkp MB1      &mkp MB2       &mkp MB2   &msc SCRL_DOWN
-&mkp MB4  &trans  &trans  &trans  &trans                    &kp LG(DOWN)  &kp LEFT      &kp UP         &kp RIGHT  &trans
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &kp DOWN       &trans     &kp LG(W)
+&kp F1    &kp F2  &kp F3  &kp F4  &kp F5                     &kp LG(UP_ARROW)  &kp RG(LEFT)  &kp RG(RIGHT)  &mkp MB3   &msc SCRL_UP
+&kp F6    &kp F7  &kp F8  &kp F9  &kp F10                    &kp LG(DOWN)      &mkp MB1      &mkp MB2       &mkp MB2   &msc SCRL_DOWN
+&mkp MB4  &trans  &trans  &trans  &trans                     &kp LC(T)         &kp LEFT      &kp UP         &kp RIGHT  &trans
+&trans    &trans  &trans  &trans  &trans   &trans    &trans  &kp LC(W)         &trans        &kp DOWN       &trans     &trans
             >;
         };
 
         layer_2 {
             display-name = "Number Layer";
             bindings = <
-&trans        &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp EQUAL                          &kp MINUS     &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp PLUS
-&kp ASTERISK  &mt LALT NUMBER_4  &mt LSHIFT NUMBER_5  &mt LGUI NUMBER_6  &mt LCTRL MINUS                    &kp SLASH     &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp ASTERISK
-&kp SLASH     &kp NUMBER_1       &kp NUMBER_2         &kp NUMBER_3       &kp PLUS                           &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_0
-&trans        &kp DOT            &kp NUMBER_0         &trans             &kp LANG2        &trans    &trans  &kp LANG1     &trans        &kp RS(RC(TAB))  &kp RC(TAB)   &kp F12
+&kp LC(LA(DEL))  &kp LG(LEFT)      &kp UP          &kp LG(RIGHT)   &kp SINGLE_QUOTE                    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp LC(TAB)      &kp LEFT          &kp DOWN_ARROW  &kp RIGHT       &kp COLON                           &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
+&kp LS(LC(TAB))  &kp LS(UP_ARROW)  &kp LA(DOWN)    &kp UNDERSCORE  &kp SEMICOLON                       &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS
+&kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)   &trans          &kp LANG2         &trans    &trans  &trans        &trans        &kp N0        &kp PERIOD    &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -85,10 +85,10 @@
         layer_3 {
             display-name = "Mark Layer";
             bindings = <
-&kp LS(LG(N4))  &kp F4   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                        &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&emoji          &kp F5   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                        &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
-&kp KP_NUMLOCK  &kp F11  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                        &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&trans          &trans   &kp NUMBER_0          &trans                 &kp SPACE  &trans    &trans  &kp ENTER  &trans           &none             &none              &kp F12
+&kp LS(LG(N4))  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                        &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
+&emoji          &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                        &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
+&kp KP_NUMLOCK  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                        &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
+&trans          &trans  &trans                &trans                 &kp SPACE  &trans    &trans  &kp ENTER  &trans           &none             &none              &kp F12
             >;
         };
 
