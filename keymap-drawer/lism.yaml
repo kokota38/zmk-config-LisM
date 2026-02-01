@@ -35,8 +35,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - Sft+Gui+4
-  - {t: SPACE, h: Number Layer}
   - '&mkp MB1'
+  - {t: SPACE, h: Number Layer}
   - BS
   - {t: ENTER, h: CONTEXT MENU}
   - Sft+Gui+4
