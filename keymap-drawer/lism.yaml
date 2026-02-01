@@ -9,8 +9,8 @@ layers:
   - Y
   - U
   - {t: I, h: Mouse Layer}
-  - {t: O, h: Mark Layer}
-  - P
+  - {t: O, h: Number Layer}
+  - {t: P, h: Mark Layer}
   - {t: A, h: LEFT SHIFT}
   - S
   - D
@@ -35,9 +35,9 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - Sft+Gui+4
-  - '&mkp MB1'
   - {t: SPACE, h: Number Layer}
-  - {t: BS, h: Device Layer}
+  - '&mkp MB1'
+  - BS
   - {t: ENTER, h: CONTEXT MENU}
   - Sft+Gui+4
   - POUND
@@ -65,9 +65,9 @@ layers:
   - '&mkp MB2'
   - '&msc SCRL_DOWN'
   - '&mkp MB4'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - Ctl+T
   - ←
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -95,7 +95,7 @@ layers:
   - '-'
   - '7'
   - '8'
-  - '9'
+  - {t: '9', type: held}
   - +
   - Ctl+TAB
   - ←
@@ -121,8 +121,8 @@ layers:
   - Sft+↓
   - Sft+→
   - {t: ▽, type: trans}
-  - LANG2
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,19 +132,19 @@ layers:
   Mark Layer:
   - Sft+Gui+4
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - (
   - )
-  - ''
   - '~'
   - '!'
   - '@'
-  - {t: '#', type: held}
-  - $
+  - '#'
+  - {t: $, type: held}
   - '&emoji'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
-  - ''
   - '`'
   - _
   - ''''
@@ -152,9 +152,9 @@ layers:
   - \
   - KP NUMLOCK
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '{'
   - '}'
-  - ''
   - '|'
   - '%'
   - ^
@@ -169,9 +169,9 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - F12
+  - Ctl++
+  - Ctl+-
+  - Sft+Gui+S
   Device Layer:
   - {type: held}
   - ''
@@ -215,3 +215,16 @@ layers:
   - ''
   - ''
   - Boot
+combos:
+- p: [34, 35]
+  k: LANGUAGE 1
+- p: [34, 24]
+  k: LANGUAGE 2
+- p: [36, 37]
+  k: {t: Number Layer, h: sticky}
+- p: [13, 12]
+  k: {t: Mark Layer, h: sticky}
+- p: [12, 11]
+  k: {t: Mark Layer, h: sticky}
+- p: [14, 13]
+  k: {t: Mouse Layer, h: sticky}
