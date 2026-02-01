@@ -88,7 +88,7 @@
 &lt 4 Q               &kp W         &kp E         &kp R           &kp T                                   &kp Y                     &kp U           &lt 1 I    &lt 2 O     &lt 3 P
 &mt LEFT_SHIFT A      &kp S         &kp D         &kp F           &kp G                                   &kp H                     &kp J           &kp K      &kp L       &kp SLASH
 &mt LEFT_SHIFT Z      &kp X         &kp C         &kp V           &kp B                                   &kp N                     &kp M           &kp COMMA  &kp DOT     &kp MINUS
-&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &lt 2 SPACE  &mkp MB1    &kp BACKSPACE  &mt K_CONTEXT_MENU ENTER  &kp LS(LG(N4))  &kp POUND  &kp ESCAPE  &mt K_CONTEXT_MENU DEL
+&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &mkp MB1  &lt 2 SPACE    &kp BACKSPACE  &mt K_CONTEXT_MENU ENTER  &kp LS(LG(N4))  &kp POUND  &kp ESCAPE  &mt K_CONTEXT_MENU DEL
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
