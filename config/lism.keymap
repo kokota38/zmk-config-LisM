@@ -86,9 +86,9 @@
             display-name = "Default Layer";
             bindings = <
 &lt 4 Q               &kp W         &kp E         &kp R           &kp T                                   &kp Y                     &kp U           &lt 1 I    &lt 2 O     &lt 3 P
-&mt LEFT_SHIFT A      &kp S         &kp D         &kp F           &kp G                                   &kp H                     &kp J           &kp K      &kp L       &kp SLASH
+&mt LEFT_SHIFT A      &kp S         &kp D         &kp F           &kp G                                   &kp H                     &kp J           &kp K      &kp L       &kp ENTER
 &mt LEFT_SHIFT Z      &kp X         &kp C         &kp V           &kp B                                   &kp N                     &kp M           &kp COMMA  &kp DOT     &kp MINUS
-&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &mkp MB1  &lt 2 SPACE    &kp BACKSPACE  &mt K_CONTEXT_MENU ENTER  &kp LS(LG(N4))  &kp POUND  &kp ESCAPE  &mt K_CONTEXT_MENU DEL
+&mt LEFT_CONTROL TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LS(LG(N4))  &mkp MB1  &lt 2 SPACE    &kp BACKSPACE  &mt K_CONTEXT_MENU ENTER  &kp LS(LG(N4))  &kp SLASH  &kp ESCAPE  &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
@@ -107,10 +107,10 @@
         layer_2 {
             display-name = "Number Layer";
             bindings = <
-&kp LC(LA(DEL))  &kp LG(LEFT)      &kp UP          &kp LG(RIGHT)   &kp SINGLE_QUOTE                    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&kp LC(TAB)      &kp LEFT          &kp DOWN_ARROW  &kp RIGHT       &kp COLON                           &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
-&kp LS(LC(TAB))  &kp LS(UP_ARROW)  &kp LA(DOWN)    &kp UNDERSCORE  &kp SEMICOLON                       &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS
-&kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)   &trans          &trans            &trans    &trans  &trans        &trans        &kp N0        &kp PERIOD    &kp RIGHT_PARENTHESIS
+&kp LC(LA(DEL))  &kp LG(LEFT)      &kp UP          &kp LG(RIGHT)   &kp SINGLE_QUOTE                    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp PLUS
+&kp LC(TAB)      &kp LEFT          &kp DOWN_ARROW  &kp RIGHT       &kp COLON                           &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6          &kp ASTERISK
+&kp LS(LC(TAB))  &kp LS(UP_ARROW)  &kp LA(DOWN)    &kp UNDERSCORE  &kp SEMICOLON                       &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_0
+&kp LS(LEFT)     &kp LS(DOWN)      &kp LS(RIGHT)   &trans          &trans            &trans    &trans  &trans        &trans        &kp PERIOD    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -119,10 +119,10 @@
         layer_3 {
             display-name = "Mark Layer";
             bindings = <
-&kp LS(LG(N4))  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&emoji          &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                        &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
-&kp KP_NUMLOCK  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE                          &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&trans          &trans  &trans  &trans                &kp SPACE              &trans    &trans  &kp ENTER  &trans           &kp LC(PLUS)      &kp LC(MINUS)      &kp LS(LG(S))
+&kp LS(LG(N4))  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
+&emoji          &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                  &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
+&kp KP_NUMLOCK  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE                                    &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
+&trans          &trans  &trans  &trans                &kp SPACE              &kp K_PLAY_PAUSE    &trans  &kp ENTER  &trans           &kp LC(PLUS)      &kp LC(MINUS)      &kp LS(LG(S))
             >;
         };
 
