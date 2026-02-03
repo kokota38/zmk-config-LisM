@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - /
+  - ENTER
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -40,9 +40,9 @@ layers:
   - BS
   - {t: ENTER, h: CONTEXT MENU}
   - Sft+Gui+4
-  - POUND
+  - /
   - ESCAPE
-  - {t: DEL, h: CONTEXT MENU}
+  - DEL
   Mouse Layer:
   - F1
   - F2
@@ -116,7 +116,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - (
+  - '0'
   - Sft+←
   - Sft+↓
   - Sft+→
@@ -126,8 +126,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
   - PERIOD
+  - (
   - )
   Mark Layer:
   - Sft+Gui+4
@@ -164,10 +164,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
+  - {t: ▽, type: trans}
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
   - {t: ▽, type: trans}
   - Ctl++
   - Ctl+-
