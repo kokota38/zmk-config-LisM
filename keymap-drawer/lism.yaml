@@ -93,9 +93,9 @@ layers:
   - Gui+→
   - ''''
   - '-'
-  - '7'
-  - '8'
-  - {t: '9', type: held}
+  - KP 7
+  - KP 8
+  - {t: KP 9, type: held}
   - +
   - Ctl+TAB
   - ←
@@ -103,9 +103,9 @@ layers:
   - →
   - ':'
   - /
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - '*'
   - Sft+Ctl+TAB
   - Sft+UP ARROW
@@ -113,9 +113,9 @@ layers:
   - UNDERSCORE
   - ;
   - KP EQUAL
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - '0'
   - Sft+←
   - Sft+↓
@@ -174,7 +174,7 @@ layers:
   - Sft+Gui+S
   Device Layer:
   - {type: held}
-  - ''
+  - OUT TOG
   - ''
   - ''
   - BT CLR
