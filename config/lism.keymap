@@ -127,7 +127,7 @@
 
             >;
         };
-cccccc
+
         layer_6 {
             status = "reserved";aaaaaa
             display-name = "Brank Layer";
